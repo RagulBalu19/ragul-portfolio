@@ -1,0 +1,75 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.glass-card{
+    width:60px;
+    height:60px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+@keyframes floating{
+
+0%,100%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+}
+
+.floating{
+animation:floating 3s ease-in-out infinite;
+}
+
+.delay-200{
+animation-delay:.2s;
+}
+
+.delay-500{
+animation-delay:.5s;
+}
+
+.delay-700{
+animation-delay:.7s;
+}
+.glass-card-stat{
+
+padding:30px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(20px);
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.3s;
+
+}
+
+.glass-card-stat:hover{
+
+transform:translateY(-8px);
+
+border-color:#3b82f6;
+
+}

@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Ragul Balu</title>
+
+<link rel="stylesheet" href="assets/css/output.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+
+<body class="bg-slate-950 text-white">
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-white/10 backdrop-blur-xl px-6 py-4 shadow-lg">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold tracking-wide">
+                  <span class="text-blue-500">R</span>B.
+                </a>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex items-center gap-8 font-medium">
+                    <li>
+                        <a href="#home"
+                            class="hover:text-blue-500 transition duration-300">
+                        Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about"
+                        class="hover:text-blue-500 transition duration-300">
+                        About
+                      </a>
+                    </li>
+                
+                    <li>
+                      <a href="#skills"
+                        class="hover:text-blue-500 transition duration-300">
+                        Skills
+                      </a>
+                    </li>
+                
+                    <li>
+                      <a href="#projects"
+                        class="hover:text-blue-500 transition duration-300">
+                        Projects
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#experience"
+                        class="hover:text-blue-500 transition duration-300">
+                        Journey
+                      </a>
+                    </li>
+                
+                    <li>
+                      <a href="#blog"
+                        class="hover:text-blue-500 transition duration-300">
+                        Blog
+                      </a>
+                    </li>
+                
+                    <li>
+                      <a href="#contact"
+                        class="hover:text-blue-500 transition duration-300">
+                        Contact
+                      </a>
+                    </li>
+
+                </ul>
+
+                <!-- Right Side -->
+                <div class="flex items-center gap-4">
+                    <!-- Hire Me Button -->
+                    <a href="#contact" class="hidden md:block rounded-xl bg-blue-600 px-5 py-2 text-white hover:bg-blue-700 transition">Hire Me</a>
+
+                    <!-- Mobile Menu -->
+                    <button id="menu-btn" class="md:hidden">☰</button>
+                    
+
+                </div>
+                <div id="mobileMenu" class="hidden fixed top-24 left-4 right-4 rounded-2xl bg-white/90 backdrop-blur-xl shadow-xl p-6 md:hidden">
+                    <ul class="space-y-5 text-lg">
+                        <li><a href="#home">Home</a></li>
+
+                        <li><a href="#about">About</a></li>
+
+                        <li><a href="#skills">Skills</a></li>
+
+                        <li><a href="#projects">Projects</a></li>
+
+                        <li><a href="#blog">Blog</a></li>
+
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden min-h-screen flex items-center bg-linear-to-br from-slate-950 via-blue-950 to-slate-900">       
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <div>
+            <p class="text-blue-500 font-semibold mb-2">
+                👋 Hello, I'm
+            </p>
+            <h1 class="text-6xl md:text-8xl font-black leading-tight tracking-tight">
+                Ragul <span class="text-blue-500">Balu</span>
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mt-4">
+                I'm <span id="typing"></span>
+            </h2>
+            <p class="mt-6 text-gray-600 dark:text-gray-300 max-w-lg">
+                I build fast, responsive, and scalable web applications
+                using HTML, Tailwind CSS, JavaScript, Python, and Django.
+            </p>
+            <div class="mt-8 flex gap-4">
+                <a href="#projects" 
+                    class="px-7 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 transition shadow-lg shadow-blue-500/40">
+                    View Projects
+                </a>
+                <a href="./assets/resume/Ragul Balu_1.pdf" target="_blank" class="px-7 py-4 rounded-xl border border-slate-500 hover:border-blue-500 hover:bg-slate-800 transition">
+                    Download Resume
+                </a>
+            </div>
+        </div>
+        <!-- Right Content -->
+        <div class="relative flex justify-center items-center">
+             <!-- Glow -->
+             <div class="absolute w-80 h-80 bg-blue-500/20 blur-3xl rounded-full"></div>
+             <!-- Profile -->
+             <img src="assets/images/profile.jpg"
+                  alt="Profile"
+                  class="relative z-10 w-72 md:w-80 rounded-full border-4 border-blue-500 shadow-2xl">
+             <!-- Floating Icons -->
+             <div class="absolute top-5 left-5 glass-card floating">
+                 <i class="fab fa-python text-yellow-400 text-2xl"></i>
+             </div>
+         
+             <div class="absolute top-12 right-0 glass-card floating delay-200">
+                 <i class="fab fa-js text-yellow-300 text-2xl"></i>
+             </div>
+         
+             <div class="absolute bottom-12 left-0 glass-card floating delay-500">
+                 <i class="fab fa-html5 text-orange-500 text-2xl"></i>
+             </div>
+         
+             <div class="absolute bottom-5 right-5 glass-card floating delay-700">
+                 <i class="fab fa-css3-alt text-blue-400 text-2xl"></i>
+             </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
+            <a href="#about" class="flex flex-col items-center">
+                <span class="text-sm text-gray-400">
+                    Scroll Down
+                </span>
+                <i class="fas fa-angle-down text-2xl mt-2 animate-bounce text-blue-400"></i>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Summa oru section -->
+    <section class="max-w-6xl mx-auto px-6 -mt-12 relative z-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+            <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-blue-500 hover:-translate-y-2 hover:shadow-blue-500/20 hover:shadow-xl transition-all duration-300">
+                <h2 id="project-count" class="text-3xl font-bold">0</h2>
+                <p class="text-2xl font-bold mb-4">Projects</p>
+            </div>
+
+            <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-blue-500 hover:-translate-y-2 hover:shadow-blue-500/20 hover:shadow-xl transition-all duration-300">
+                <h2 id="experiene-count" class="text-3xl font-bold">0</h2>
+                <p class="text-2xl font-bold mb-4">Years Experience</p>
+            </div>
+
+            <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-blue-500 hover:-translate-y-2 hover:shadow-blue-500/20 hover:shadow-xl transition-all duration-300">
+                <h2 class="text-2xl font-bold mb-4 text-blue-500">
+                    Technologies
+                </h2>
+
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span>Frontend</span>
+                        <span id="frontend-count">0</span>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <span>Backend</span>
+                        <span id="backend-count">0</span>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <span>Dev Tools</span>
+                        <span id="tools-count">0</span>
+                    </div>
+                
+                    <div class="flex justify-between">
+                        <span>Design</span>
+                        <span id="design-count">0</span>
+                    </div>
+                
+                    <div class="flex justify-between">
+                        <span>MS Office</span>
+                        <span id="office-count">0</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-blue-500 hover:-translate-y-2 hover:shadow-blue-500/20 hover:shadow-xl transition-all duration-300">
+                <h2 id="responsive-count" class="text-3xl font-bold">0%</h2>
+                <p class="text-2xl font-bold mb-4">Responsive</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="h-px bg-linear-to-r from-transparent via-slate-700 to-transparent"></div> -->
+
+
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Heading -->
+            <div class="text-center mb-20">
+                <span class="text-blue-500 uppercase tracking-[6px] font-semibold">ABOUT</span>
+                <h2 class="text-5xl font-bold mt-4">About Me</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+            <!-- Content -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Image -->
+                <div class="flex justify-center">
+                    <div
+                        class="relative rounded-3xl overflow-hidden border border-slate-700 shadow-2xl">
+                        <img src="assets/images/profile.jpg"
+                            alt="Profile"
+                            class="w-80 lg:w-96">
+                    </div>
+                </div>
+                <!-- Right -->
+                <div>
+                    <h3 class="text-3xl font-bold mb-6">
+                        Frontend & Django Developer
+                    </h3>
+                    <p class="text-slate-400 leading-8">
+                        I'm a passionate web developer focused on building
+                        responsive, user-friendly, and scalable web applications.
+                        I enjoy turning ideas into real products using HTML,
+                        Tailwind CSS, JavaScript, Python, and Django.
+                    </p>
+                    <!-- Highlights -->
+                    <div class="grid grid-cols-2 gap-4 mt-10">
+                        <div class="rounded-xl bg-slate-800 p-4">
+                            🚀 Fast Learner
+                        </div>
+                        <div class="rounded-xl bg-slate-800 p-4">
+                            💻 Clean Code
+                        </div>
+                        <div class="rounded-xl bg-slate-800 p-4">
+                            ⚡ Problem Solver
+                        </div>
+                        <div class="rounded-xl bg-slate-800 p-4">
+                            🤝 Team Player
+                        </div>
+                    </div>
+                    <a href="./assets/resume/Ragul Balu_1.pdf"
+                        target="_blank" class="inline-flex mt-10 bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-xl">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills section -->
+    <section id="skills" class="py-24 bg-slate-950">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+
+                <span class="text-blue-500 uppercase tracking-[6px] font-semibold">
+                    Skills
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-bold mt-4">
+                    Technologies I Work With
+                </h2>
+
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                    I enjoy building modern web applications using these
+                    technologies.
+                </p>
+
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- HTML -->
+                <div class="skill-card frontend group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                    <i class="fab fa-html5 text-6xl text-orange-500 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+
+                    <h3 class="mt-5 text-xl font-semibold">
+                        HTML5
+                    </h3>
+
+                    <p class="text-slate-400 mt-2 text-sm">
+                        Semantic & Accessible
+                    </p>
+
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-card frontend group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fab fa-css3-alt text-6xl text-blue-500 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        CSS3
+                    </h3>
+                
+                    <p class="text-slate-400 mt-2 text-sm">
+                        Responsive Layouts
+                    </p>
+                
+                </div>
+
+                <!-- Tailwind -->
+                <div class="skill-card frontend group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fas fa-wind text-6xl text-cyan-400 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        Tailwind CSS
+                    </h3>
+                
+                    <p class="text-slate-400 mt-2 text-sm">
+                        Utility First CSS
+                    </p>
+                
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card frontend group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fab fa-js text-6xl text-yellow-400 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        JavaScript
+                    </h3>
+                
+                    <p class="text-slate-400 mt-2 text-sm">
+                        Interactive UI
+                    </p>
+                
+                </div>
+            
+                <!-- React -->
+                <div class="skill-card frontend group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fab fa-react text-6xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        React
+                    </h3>
+                
+                </div>
+            
+                <!-- Python -->
+                <div class="skill-card backend group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fab fa-python text-6xl text-yellow-500 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        Python
+                    </h3>
+                
+                </div>
+            
+                <!-- Django -->
+                <div class="skill-card backend group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fas fa-server text-6xl text-green-500 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        Django
+                    </h3>
+                
+                </div>
+            
+                <!-- SQL -->
+                <div class="skill-card backend group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fas fa-database text-6xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        SQL
+                    </h3>
+                
+                </div>
+            
+                <!-- Git -->
+                <div class="skill-card tools group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fab fa-git-alt text-6xl text-red-500 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        Git
+                    </h3>
+                
+                </div>
+            
+                <!-- GitHub -->
+                <div class="skill-card tools group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fab fa-github text-6xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        GitHub
+                    </h3>
+                
+                </div>
+            
+                <!-- VS Code -->
+                <div class="skill-card tools group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fas fa-code text-6xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        VS Code
+                    </h3>
+                
+                </div>
+            
+                <!-- Illustrator -->
+                <div class="skill-card design group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fas fa-pen-nib text-6xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        Illustrator
+                    </h3>
+                
+                </div>
+            
+                <!-- InDesign -->
+                <div class="skill-card design group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fas fa-book-open text-6xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        InDesign
+                    </h3>
+                
+                </div>
+            
+                <!-- Acrobat -->
+                <div class="skill-card design group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fas fa-file-pdf text-6xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        Acrobat
+                    </h3>
+                
+                </div>
+            
+                <!-- Word -->
+                <div class="skill-card office group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fas fa-file-word text-6xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        Word
+                    </h3>
+                
+                </div>
+            
+                <!-- Excel -->
+                <div class="skill-card office group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fas fa-file-excel text-6xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        Excel
+                    </h3>
+                
+                </div>
+            
+                <!-- PowerPoint -->
+                <div class="skill-card office group rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                
+                    <i class="fas fa-file-powerpoint text-6xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                
+                    <h3 class="mt-5 text-xl font-semibold">
+                        PowerPoint
+                    </h3>
+                
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-slate-900">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+
+                <span class="text-blue-500 uppercase tracking-[6px] font-semibold">
+                    Projects
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-bold mt-4">
+                    Featured Projects
+                </h2>
+
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                    Here are some of my recent projects showcasing my frontend,
+                    backend, and UI/UX development skills.
+                </p>
+
+            </div>
+
+            <!-- Filter Buttons -->
+
+            <div class="flex justify-center flex-wrap gap-4 mb-12">
+
+                <button class="filter-btn active px-5 py-2 rounded-full bg-blue-600 text-white" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn px-5 py-2 rounded-full border border-slate-700 hover:border-blue-500 transition" data-filter="frontend" >
+                    Frontend
+                </button>
+
+                <button class="filter-btn px-5 py-2 rounded-full border border-slate-700 hover:border-blue-500 transition" data-filter="django" >
+                    Django
+                </button>
+
+                <button class="filter-btn px-5 py-2 rounded-full border border-slate-700 hover:border-blue-500 transition" data-filter="python" >
+                    Python
+                </button>
+
+            </div>
+
+            <!-- Cards -->
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project 1 -->
+                <div class="project-card django python group rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300">
+
+                    <div class="overflow-hidden">
+
+                        <img src="assets/images/project1.png"
+                            class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-bold">
+                            FREELANCE MARKET – FREELANCER MICRO-TASK MARKETPLACE
+                        </h3>
+
+                        <p class="text-slate-400 mt-3">
+                            <b>FreelanceMarket</b> is a secure freelance marketplace that connects clients with verified professionals, offering skill-tested freelancers, transparent pricing, and escrow-protected payments for reliable project collaboration.
+
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mt-5">
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                Python
+                            </span>
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                Django
+                            </span>
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                BootStrap
+                            </span>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                HTML
+                            </span>
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                CSS
+                            </span>
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                JavaScript
+                            </span>
+
+                        </div>
+
+                        <div class="flex gap-4 mt-6">
+
+                            <a href="https://freelancemarket-p66f.onrender.com/"
+                                class="flex-1 text-center py-2 rounded-xl bg-blue-600 hover:bg-blue-700 transition">
+                                Live Demo
+                            </a>
+
+                            <a href="https://github.com/RagulBalu19/FreelanceMarket"
+                                class="flex-1 text-center py-2 rounded-xl border border-slate-700 hover:border-blue-500 transition">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 2 -->
+                 <div class="project-card django python group rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300">
+
+                    <div class="overflow-hidden">
+
+                        <img src="assets/images/project2.png"
+                            class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-bold">
+                            TNPSC Buddy – A Smart Notes Sharing and Assistance Platform
+                        </h3>
+
+                        <p class="text-slate-400 mt-3">
+                            <b>TNPSC Buddy</b> is an online learning platform that enables TNPSC aspirants to access, share, and manage study notes efficiently, making exam preparation simple, organized, and collaborative.
+
+
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mt-5">
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                Python
+                            </span>
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                Django
+                            </span>
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                HTML
+                            </span>
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                CSS
+                            </span>
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                JavaScript
+                            </span>
+
+                        </div>
+
+                        <div class="flex gap-4 mt-6">
+
+                            <a href="https://github.com/RagulBalu19/MiniProject-Tnpsc-Buddy"
+                                class="flex-1 text-center py-2 rounded-xl border border-slate-700 hover:border-blue-500 transition">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 3 -->
+                 <div class="project-card frontend group rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300">
+
+                    <div class="overflow-hidden">
+
+                        <img src="assets/images/project3.png"
+                            class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-bold">
+                            GreenLeaf Cafe
+                        </h3>
+
+                        <p class="text-slate-400 mt-3">
+                            <b>GreenLeaf Cafe</b> is a modern, responsive restaurant website built using <b>HTML and Tailwind CSS</b>, featuring an elegant user interface with menu browsing, gallery, contact information, and online table booking for a seamless customer experience.
+
+
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mt-5">
+
+                            
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                HTML
+                            </span>
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                TailwindCSS
+                            </span>
+
+                        </div>
+
+                        <div class="flex gap-4 mt-6">
+
+                            <a href="https://github.com/RagulBalu19/pymern-scribbles/tree/main/projects/Green%20Leaf%20cafe"
+                                class="flex-1 text-center py-2 rounded-xl border border-slate-700 hover:border-blue-500 transition">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 4 -->
+                 <div class="project-card frontend group rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300">
+
+                    <div class="overflow-hidden">
+
+                        <img src="assets/images/project4.png"
+                            class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-bold">
+                            Food Munch 
+                        </h3>
+
+                        <p class="text-slate-400 mt-3">
+                            <b>Food Munch</b> is a responsive restaurant landing page built using <b>HTML, TailwindCSS</b>, showcasing food menus, delivery services, online ordering, and a modern user-friendly interface for an engaging dining experience.
+
+
+
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mt-5">
+
+                            
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                HTML
+                            </span>
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                TailwindCSS
+                            </span>
+
+                        </div>
+
+                        <div class="flex gap-4 mt-6">
+
+                            <a href="https://github.com/RagulBalu19/pymern-scribbles/tree/main/projects/Food%20Project"
+                                class="flex-1 text-center py-2 rounded-xl border border-slate-700 hover:border-blue-500 transition">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 5 -->
+                 <div class="project-card frontend group rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl hover:-translate-y-3 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300">
+
+                    <div class="overflow-hidden">
+
+                        <img src="assets/images/project5.png"
+                            class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-bold">
+                            Student Management 
+                        </h3>
+
+                        <p class="text-slate-400 mt-3">
+                            <b>Student Management System</b> is a responsive web application built using <b>HTML, Tailwind CSS, and React.js</b> that enables users to add, edit, delete, search, and filter student records while displaying real-time department-wise statistics through an intuitive and modern interface.
+
+
+
+
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mt-5">
+
+                            
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                HTML
+                            </span>
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                TailwindCSS
+                            </span>
+
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-sm">
+                                React.js
+                            </span>
+
+                        </div>
+
+                        <div class="flex gap-4 mt-6">
+
+                            <a href="https://github.com/RagulBalu19/pymern-scribbles/tree/main/projects/ReactProjects/student-management"
+                                class="flex-1 text-center py-2 rounded-xl border border-slate-700 hover:border-blue-500 transition">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Experience and Education section-->
+    <section id="experience" class="py-24 bg-slate-950">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+
+                <span class="text-blue-500 uppercase tracking-[5px]">
+                    Journey
+                </span>
+
+                <h2 class="text-5xl font-bold mt-3">
+                    Experience & Education
+                </h2>
+
+                <p class="text-slate-400 mt-4">
+                    My learning journey and professional experience.
+                </p>
+
+            </div>
+
+            <!-- Timeline -->
+
+            <div class="relative border-l-2 border-blue-500 ml-6">
+
+                <!-- Item 1 -->
+                <div class="mb-14 ml-10">
+
+                    <div class="absolute -left-3 w-6 h-6 rounded-full bg-green-500 shadow-lg shadow-blue-500/50"></div>
+
+                    <span class="text-green-400 text-sm">
+                        JAN 2026 – MAR 2026
+                    </span>
+
+                    <h3 class="text-2xl font-semibold mt-2">
+                        Web Developer Intern
+                    </h3>
+
+                    <h4 class="text-slate-400 mt-1">
+                        JB Soft Solutions, Saidapet, Chennai
+                    </h4>
+
+                    <p class="mt-4 text-slate-400">
+                        Managed and updated WordPress website content while designing responsive pages, performing maintenance (plugin updates, bug fixes, performance optimization), applying basic PHP customizations, and collaborating with team members to deliver projects on time and meet requirements.
+                    </p>
+
+                </div>
+                <!-- Item 2 -->
+                <div class="mb-14 ml-10">
+
+                    <div class="absolute -left-3 w-6 h-6 rounded-full bg-blue-500 shadow-lg shadow-blue-500/50"></div>
+
+                    <span class="text-blue-400 text-sm">
+                        2024 – 2026
+                    </span>
+
+                    <h3 class="text-2xl font-semibold mt-2">
+                        Master of Computer Applications
+                    </h3>
+
+                    <h4 class="text-slate-400 mt-1">
+                        SRM Valliammai Engineering college 
+                    </h4>
+
+                    <p class="mt-4 text-slate-400">
+                        Obtained CGPA: 8.27
+                    </p>
+
+                </div>
+
+                <!-- Item 3 -->
+                <div class="mb-14 ml-10">
+
+                    <div class="absolute -left-3 w-6 h-6 rounded-full bg-green-500 shadow-lg shadow-blue-500/50"></div>
+
+                    <span class="text-green-400 text-sm">
+                        2023 – 2024
+                    </span>
+
+                    <h3 class="text-2xl font-semibold mt-2">
+                        Document Specialist
+                    </h3>
+
+                    <h4 class="text-slate-400 mt-1">
+                        RRD, Nandanam 
+                    </h4>
+
+                    <p class="mt-4 text-slate-400">
+                        Designed high-quality visual content using Adobe InDesign and Acrobat X Pro, collaborated with cross-functional teams to align with project goals and brand standards, streamlined document workflows, and managed secure file organization within Citrix environments
+                    </p>
+
+                </div>
+
+                <!-- Item 4 -->
+                <div class="mb-14 ml-10">
+
+                    <div class="absolute -left-3 w-6 h-6 rounded-full bg-blue-500 shadow-lg shadow-green-500/50"></div>
+
+                    <span class="text-blue-400 text-sm">
+                        2020-2023
+                    </span>
+
+                    <h3 class="text-2xl font-semibold mt-2">
+                        Bachelor of computer science
+                    </h3>
+
+                    <h4 class="text-slate-400 mt-1">
+                        Kongu Arts and Science College, Erode
+                    </h4>
+
+                    <p class="mt-4 text-slate-400">
+                        Obtained CGPA: 7.1
+                    </p>
+
+                </div>
+
+                <!-- Item 5 -->
+                <div class="mb-14 ml-10">
+
+                    <div class="absolute -left-3 w-6 h-6 rounded-full bg-blue-500 shadow-lg shadow-purple-500/50"></div>
+
+                    <span class="text-blue-400 text-sm">
+                        2019-2020
+                    </span>
+
+                    <h3 class="text-2xl font-semibold mt-2">
+                        HSE
+                    </h3>
+
+                    <h4 class="text-slate-400 mt-1">
+                        S.K.T Matriculation Higher Secondary School, Poolampatti
+                    </h4>
+
+                    <p class="mt-4 text-slate-400">
+                        Percentage: 60%
+                    </p>
+
+                </div>
+
+                <!-- Item 6 -->
+                <div class="mb-14 ml-10">
+
+                    <div class="absolute -left-3 w-6 h-6 rounded-full bg-blue-500 shadow-lg shadow-purple-500/50"></div>
+
+                    <span class="text-blue-400 text-sm">
+                        2017-2018
+                    </span>
+
+                    <h3 class="text-2xl font-semibold mt-2">
+                        SSLC
+                    </h3>
+
+                    <h4 class="text-slate-400 mt-1">
+                        S.K.T Matriculation Higher Secondary School, Poolampatti
+                    </h4>
+
+                    <p class="mt-4 text-slate-400">
+                        Percentage: 75%
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-24 bg-slate-900">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+
+                <span class="text-blue-500 uppercase tracking-[4px]">
+                    Blog
+                </span>
+
+                <h2 class="text-5xl font-bold mt-3">
+                    Latest Articles
+                </h2>
+
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                    Sharing tutorials, project updates, coding tips, and my learning journey.
+                </p>
+
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Blog Card -->
+                <article class="group rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl hover:border-blue-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300">
+
+                    <div class="overflow-hidden">
+                        <img src="assets/images/blog1.jpg"
+                            class="w-full h-56 object-cover transition duration-500 group-hover:scale-110">
+                    </div>
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between text-sm text-slate-400 mb-3">
+                            <span>15 Aug 2025</span>
+                            <span>5 min read</span>
+                        </div>
+
+                        <h3 class="text-2xl font-semibold mb-3">
+                            Mastering Tailwind CSS
+                        </h3>
+
+                        <p class="text-slate-400 mb-6">
+                            Learn useful Tailwind CSS tricks for building responsive and modern user interfaces.
+                        </p>
+
+                        <a href="#"
+                            class="text-blue-500 font-semibold group-hover:translate-x-2 inline-flex transition">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Duplicate this card for Blog 2 & Blog 3 -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+     <section id="contact" class="py-24 bg-slate-950">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+
+                <p class="text-blue-500 uppercase tracking-[4px] font-semibold">
+                    Contact
+                </p>
+
+                <h2 class="text-4xl md:text-5xl font-bold mt-3">
+                    Let's Build Something Amazing Together 🚀
+                </h2>
+
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                    Have a project in mind or looking for a developer?
+                    Feel free to reach out. I'm always open to discussing new opportunities.
+                </p>
+
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+
+                <!-- Left Side -->
+                <div class="space-y-6">
+
+                    <div class="group flex items-center gap-5 p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl hover:border-blue-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300">
+
+                        <div class="w-14 h-14 rounded-xl bg-blue-600 flex items-center justify-center text-2xl">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold text-xl">Email</h3>
+                            <p class="text-slate-400">
+                                ragulbalu77@gmail.com
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="group flex items-center gap-5 p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl hover:border-green-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-green-500/20 transition-all duration-300">
+
+                        <div class="w-14 h-14 rounded-xl bg-green-600 flex items-center justify-center text-2xl">
+                            <i class="fas fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold text-xl">Phone</h3>
+                            <p class="text-slate-400">
+                                +91 88387 37576
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="group flex items-center gap-5 p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl hover:border-purple-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300">
+
+                        <div class="w-14 h-14 rounded-xl bg-purple-600 flex items-center justify-center text-2xl">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold text-xl">Location</h3>
+                            <p class="text-slate-400">
+                                Edappadi, Salem, Tamil Nadu, India
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Social Icons -->
+
+                    <div class="flex gap-5 pt-4">
+
+                        <a href="https://github.com/RagulBalu19" class="w-14 h-14 rounded-xl bg-slate-800 flex items-center justify-center text-2xl hover:bg-blue-600 hover:-translate-y-2 transition-all duration-300">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/ragul-balu-a1a2b230a/" class="w-14 h-14 rounded-xl bg-slate-800 flex items-center justify-center text-2xl hover:bg-blue-600 hover:-translate-y-2 transition-all duration-300">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/r_a_g_u_l_05_/?__pwa=1" class="w-14 h-14 rounded-xl bg-slate-800 flex items-center justify-center text-2xl hover:bg-pink-600 hover:-translate-y-2 transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+
+                <form id="contact-form" class="rounded-3xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 space-y-6">
+
+                    <div>
+
+                        <label class="block mb-2 font-medium">
+                            Name
+                        </label>
+
+                        <input
+                            name="form_name"
+                            type="text"
+                            placeholder="Enter your name"
+                            class="w-full rounded-xl bg-slate-800 border border-slate-700 px-5 py-4 outline-none focus:border-blue-500 transition">
+                    </div>
+
+                    <div>
+
+                        <label class="block mb-2 font-medium">
+                            Email
+                        </label>
+
+                        <input
+                            name="form_email"
+                            type="email"
+                            placeholder="Enter your email"
+                            class="w-full rounded-xl bg-slate-800 border border-slate-700 px-5 py-4 outline-none focus:border-blue-500 transition">
+                    </div>
+
+                    <div>
+
+                        <label class="block mb-2 font-medium">
+                            Subject
+                        </label>
+
+                        <input
+                            name="subject"
+                            type="text"
+                            placeholder="Project Subject"
+                            class="w-full rounded-xl bg-slate-800 border border-slate-700 px-5 py-4 outline-none focus:border-blue-500 transition">
+                    </div>
+
+                    <div>
+
+                        <label class="block mb-2 font-medium">
+                            Message
+                        </label>
+
+                        <textarea
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            class="w-full rounded-xl bg-slate-800 border border-slate-700 px-5 py-4 outline-none resize-none focus:border-blue-500 transition"></textarea>
+                    </div>
+
+                    <button
+                        id="send-btn"
+                        type="submit"
+                        class="w-full rounded-xl bg-blue-600 py-4 font-semibold hover:bg-blue-700 hover:scale-[1.02] transition-all duration-300">
+                        🚀 Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+<!-- Footer -->
+<footer class="relative border-t border-slate-800 bg-slate-950">
+
+    <!-- Top Section -->
+    <div class="max-w-7xl mx-auto px-6 py-16">
+
+        <div class="grid md:grid-cols-4 gap-10">
+
+            <!-- About -->
+            <div>
+                <a href="#" class="text-3xl font-bold">
+                    <span class="text-blue-500">R</span>B.
+                </a>
+
+                <p class="mt-5 text-slate-400 leading-7">
+                    Passionate Frontend & Django Developer building responsive,
+                    modern, and scalable web applications.
+                </p>
+
+                <div class="flex gap-4 mt-6">
+
+                    <a href="https://github.com/ragulbalu19"
+                        target="_blank"
+                        class="w-11 h-11 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition duration-300">
+
+                        <i class="fab fa-github text-lg"></i>
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ragul-balu-a1a2b230a/"
+                        target="_blank"
+                        class="w-11 h-11 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition duration-300">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a>
+
+                    <a href="mailto:ragulbalu77@gmail.com"
+                        class="w-11 h-11 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition duration-300">
+
+                        <i class="fas fa-envelope"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+
+                <h3 class="text-xl font-semibold mb-5">
+                    Quick Links
+                </h3>
+
+                <ul class="space-y-3 text-slate-400">
+
+                    <li>
+                        <a href="#home" class="hover:text-blue-500 transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="hover:text-blue-500 transition">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="hover:text-blue-500 transition">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="hover:text-blue-500 transition">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#blog" class="hover:text-blue-500 transition">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="hover:text-blue-500 transition">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Services -->
+            <div>
+
+                <h3 class="text-xl font-semibold mb-5">
+                    Services
+                </h3>
+
+                <ul class="space-y-3 text-slate-400">
+
+                    <li>Responsive Web Design</li>
+
+                    <li>Django Development</li>
+
+                    <li>REST API Development</li>
+
+                    <li>Frontend Development</li>
+
+                    <li>UI/UX Design</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+            <div>
+
+                <h3 class="text-xl font-semibold mb-5">
+                    Contact
+                </h3>
+
+                <div class="space-y-4 text-slate-400">
+
+                    <p>
+                        <i class="fas fa-envelope text-blue-500 mr-2"></i>
+
+                        ragulbalu77@gmail.com
+                    </p>
+
+                    <p>
+                        <i class="fas fa-phone text-blue-500 mr-2"></i>
+
+                        +91 88387 37576
+                    </p>
+
+                    <p>
+                        <i class="fas fa-location-dot text-blue-500 mr-2"></i>
+
+                        Edappadi, Salem, Tamil Nadu, India
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-slate-800"></div>
+
+    <!-- Bottom -->
+    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+
+        <p class="text-slate-500 text-center md:text-left">
+            © 2026 Ragul Balu. All Rights Reserved.
+        </p>
+
+        <p class="text-slate-500 text-center">
+            Built with
+            <span class="text-red-500">❤</span>
+            using
+            <span class="text-blue-500 font-semibold">
+                HTML • Tailwind CSS • JavaScript
+            </span>
+        </p>
+
+    </div>
+
+</footer>
+<script src="assets/js/app.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!-- Email script -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="assets/js/contact.js"></script>
+<script>
+new Typed("#typing", {
+    strings: [
+        "Frontend Developer",
+        "Django Developer",
+        "Python Developer",
+        "Web Designer"
+    ],
+    typeSpeed: 70,
+    backSpeed: 40,
+    loop: true
+});
+</script>
+</body>
+
+
+</html>
