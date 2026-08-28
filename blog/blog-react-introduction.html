@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React.js: A Beginner's Guide to Getting Started | Ragul Balu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-500">
+                Ragul<span class="text-white">.</span>
+            </a>
+
+            <a href="../index.html#blog"
+                class="text-blue-400 hover:text-blue-300 transition">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Portfolio
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <span
+                class="inline-block bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-medium">
+                React.js
+            </span>
+
+            <h1 class="text-5xl font-bold mt-6 leading-tight">
+                React.js: A Beginner's Guide to Getting Started
+            </h1>
+
+            <p class="text-slate-400 mt-6 text-lg leading-8">
+                Learn the fundamentals of React.js including Virtual DOM,
+                Components, React History, Project Setup using Vite, and why
+                React is one of the most popular JavaScript libraries for modern
+                web development.
+            </p>
+
+            <div class="flex items-center gap-6 mt-8 text-slate-400">
+
+                <span>
+                    <i class="far fa-calendar mr-2"></i>
+                    August 28, 2026
+                </span>
+
+                <span>
+                    <i class="far fa-clock mr-2"></i>
+                    8 min read
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Blog -->
+    <section class="py-16">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <article
+                class="bg-slate-900 border border-slate-800 rounded-3xl p-10 leading-8">
+
+                <p class="text-lg text-slate-300">
+                    React.js is one of the most popular JavaScript libraries
+                    for building fast, interactive, and reusable user
+                    interfaces. Developed by Facebook (Meta), React allows
+                    developers to create modern web applications using reusable
+                    components and an efficient rendering process.
+                </p>
+
+                <!-- What is React -->
+                <h2 class="text-3xl font-bold mt-12 mb-5 text-blue-400">
+                    What is React?
+                </h2>
+
+                <p>
+                    React is a <strong>JavaScript library</strong> used to build
+                    <strong>User Interfaces (UI)</strong> for web applications.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Key Points
+                </h3>
+
+                <ul class="list-disc ml-8 space-y-2 text-slate-300">
+                    <li>React is a Frontend JavaScript Library.</li>
+                    <li>Developed by Facebook (Meta).</li>
+                    <li>Created by Jordan Walke.</li>
+                    <li>First released in 2013 (v0.3).</li>
+                    <li>Used for building reusable UI components.</li>
+                </ul>
+
+                <!-- Why React -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Why React?
+                </h2>
+
+                <p>
+                    Traditional web pages manipulate the browser's DOM directly,
+                    which becomes slow as applications grow.
+                </p>
+
+                <p class="mt-5">
+                    React solves this problem by:
+                </p>
+
+                <ul class="list-disc ml-8 mt-4 space-y-2">
+                    <li>Creating reusable components.</li>
+                    <li>Updating only the required part of the page.</li>
+                    <li>Improving application performance.</li>
+                    <li>Making code easier to maintain.</li>
+                </ul>
+
+                <!-- How React Works -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    How React Works
+                </h2>
+
+                <p>
+                    Instead of changing the browser DOM directly, React creates
+                    a <strong>Virtual DOM</strong> in memory.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Working Process
+                </h3>
+
+                <ol class="list-decimal ml-8 space-y-3">
+                    <li>User performs an action.</li>
+                    <li>React creates a new Virtual DOM.</li>
+                    <li>React compares it with the previous Virtual DOM.</li>
+                    <li>Finds only the changed elements.</li>
+                    <li>Updates only those elements in the Real DOM.</li>
+                </ol>
+
+                <div
+                    class="bg-blue-600/10 border border-blue-600/30 rounded-xl p-6 mt-8">
+
+                    <h4 class="text-xl font-semibold text-blue-400 mb-3">
+                        This process is called Reconciliation.
+                    </h4>
+
+                    <ul class="list-disc ml-6 space-y-2">
+                        <li>Faster rendering</li>
+                        <li>Better performance</li>
+                        <li>Less DOM manipulation</li>
+                        <li>Efficient updates</li>
+                    </ul>
+
+                </div>
+
+                <!-- History -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    React History
+                </h2>
+
+                <div class="overflow-x-auto">
+
+                    <table class="w-full border border-slate-700">
+
+                        <thead class="bg-slate-800">
+
+                            <tr>
+
+                                <th class="border border-slate-700 p-4">Year</th>
+
+                                <th class="border border-slate-700 p-4">Version</th>
+
+                                <th class="border border-slate-700 p-4">Details</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td class="border border-slate-700 p-4">2013</td>
+
+                                <td class="border border-slate-700 p-4">v0.3</td>
+
+                                <td class="border border-slate-700 p-4">First public release</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="border border-slate-700 p-4">2014</td>
+
+                                <td class="border border-slate-700 p-4">React gained popularity</td>
+
+                                <td class="border border-slate-700 p-4">Used by Facebook</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="border border-slate-700 p-4">Present</td>
+
+                                <td class="border border-slate-700 p-4">Latest Version</td>
+
+                                <td class="border border-slate-700 p-4">Used worldwide</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- Setup -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Getting Started with React
+                </h2>
+
+                <p>
+                    Before creating a React application, install
+                    <strong>Node.js</strong>, which includes npm.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-10">
+                    Step 1: Check Node Installation
+                </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto mt-5"><code>node -v
+npm -v</code></pre>
+
+                <h3 class="text-2xl font-semibold mt-10">
+                    Step 2: Install Vite
+                </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto mt-5"><code>npm install -g create-vite</code></pre>
+
+                <h3 class="text-2xl font-semibold mt-10">
+                    Step 3: Create React Project
+                </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto mt-5"><code>npm create vite@latest my-app -- --template react</code></pre>
+
+                <h3 class="text-2xl font-semibold mt-10">
+                    Step 4: Navigate
+                </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto mt-5"><code>cd my-app</code></pre>
+
+                <h3 class="text-2xl font-semibold mt-10">
+                    Step 5: Install Packages
+                </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto mt-5"><code>npm install</code></pre>
+
+                <h3 class="text-2xl font-semibold mt-10">
+                    Step 6: Run Application
+                </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto mt-5"><code>npm run dev</code></pre>
+
+                <p class="mt-5">
+                    Open:
+                </p>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto mt-3"><code>http://localhost:5173</code></pre>
+
+                <!-- Root -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    React Container
+                </h2>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>&lt;div id="root"&gt;&lt;/div&gt;</code></pre>
+
+                <p class="mt-4">
+                    React mounts the entire application inside the
+                    <strong>root</strong> container.
+                </p>
+
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Root Function
+                </h2>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+
+const root = ReactDOM.createRoot(
+document.getElementById("root")
+);
+
+root.render(&lt;App /&gt;);</code></pre>
+
+                <h3 class="text-2xl font-semibold mt-8">
+                    Explanation
+                </h3>
+
+                <ul class="list-disc ml-8 mt-4 space-y-2">
+                    <li>createRoot() creates the React root.</li>
+                    <li>render() displays the application.</li>
+                </ul>
+
+                <!-- Components -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Why Use Components?
+                </h2>
+
+                <p>
+                    Components are reusable building blocks that help create
+                    clean and maintainable applications.
+                </p>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto mt-5"><code>function Welcome() {
+    return &lt;h1&gt;Welcome to React&lt;/h1&gt;;
+}</code></pre>
+
+                <ul class="list-disc ml-8 mt-6 space-y-2">
+                    <li>Reusable</li>
+                    <li>Easy to maintain</li>
+                    <li>Cleaner code</li>
+                    <li>Better organization</li>
+                </ul>
+
+                <!-- Advantages -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Advantages of React
+                </h2>
+
+                <ul class="list-disc ml-8 space-y-3">
+                    <li>Fast rendering using Virtual DOM.</li>
+                    <li>Reusable Components.</li>
+                    <li>Easy to learn.</li>
+                    <li>Strong community support.</li>
+                    <li>Efficient UI updates.</li>
+                    <li>Ideal for Single Page Applications (SPA).</li>
+                </ul>
+
+                <!-- Summary -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Summary
+                </h2>
+
+                <p class="text-slate-300">
+                    React is a powerful JavaScript library that simplifies
+                    frontend development by introducing reusable components and
+                    the Virtual DOM. Instead of updating the entire webpage,
+                    React updates only the changed elements, resulting in faster
+                    performance and a better user experience.
+                </p>
+
+                <p class="mt-5 text-slate-300">
+                    Whether you're building a portfolio, dashboard, or
+                    enterprise application, React provides the flexibility,
+                    performance, and developer experience needed to build modern
+                    web applications.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500">
+
+        © 2026 Ragul Balu. All Rights Reserved.
+
+    </footer>
+
+</body>
+
+</html>

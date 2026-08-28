@@ -1028,67 +1028,72 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </section>
 
     <!-- Blog Section -->
-    <section id="blog" class="py-24 bg-slate-900">
-
+    <section id="blog" class="py-20 bg-slate-950">
         <div class="max-w-7xl mx-auto px-6">
 
-            <!-- Heading -->
-            <div class="text-center mb-16">
-
-                <span class="text-blue-500 uppercase tracking-[4px]">
-                    Blog
-                </span>
-
-                <h2 class="text-5xl font-bold mt-3">
-                    Latest Articles
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold">
+                    Latest <span class="text-blue-500">Blogs</span>
                 </h2>
-
-                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
-                    Sharing tutorials, project updates, coding tips, and my learning journey.
+                <p class="text-slate-400 mt-4">
+                    Sharing my learning journey in Web Development.
                 </p>
-
             </div>
 
-            <!-- Blog Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Blog Card -->
-                <article class="group rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl hover:border-blue-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300">
+                <article
+                    class="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-blue-500 transition duration-300 hover:-translate-y-2">
 
-                    <div class="overflow-hidden">
-                        <img src="assets/images/blog1.jpg"
-                            class="w-full h-56 object-cover transition duration-500 group-hover:scale-110">
-                    </div>
+                    <img src="./assets/images/blog1.png"
+                        class="w-full h-56 object-cover"
+                        alt="React Blog">
 
                     <div class="p-6">
 
-                        <div class="flex justify-between text-sm text-slate-400 mb-3">
-                            <span></span>
-                            <span></span>
-                        </div>
+                        <span
+                            class="inline-block bg-blue-600/20 text-blue-400 text-xs px-3 py-1 rounded-full">
+                            React.js
+                        </span>
 
-                        <h3 class="text-2xl font-semibold mb-3">
-                            COMING SOON
+                        <h3
+                            class="text-2xl font-bold mt-4 group-hover:text-blue-400 transition">
+
+                            React.js: A Beginner's Guide to Getting Started
+
                         </h3>
 
-                        <p class="text-slate-400 mb-6">
+                        <p class="text-slate-400 mt-4 leading-7">
+
+                            Learn what React is, why developers use it, how the
+                            Virtual DOM works, React history, project setup using
+                            Vite, components, and the basic folder structure.
+
                         </p>
 
-                        <a href="#"
-                            class="text-blue-500 font-semibold group-hover:translate-x-2 inline-flex transition">
-                            Read More →
-                        </a>
+                        <div
+                            class="flex justify-between items-center mt-6">
+
+                            <span class="text-slate-500 text-sm">
+                                Aug 28, 2026
+                            </span>
+
+                            <a href="./blog/blog-react-introduction.html"
+                                class="text-blue-500 font-semibold hover:text-blue-400">
+
+                                Read More →
+                            </a>
+
+                        </div>
 
                     </div>
 
                 </article>
 
-                <!-- Duplicate this card for Blog 2 & Blog 3 -->
-
             </div>
 
         </div>
-
     </section>
 
     <!-- Contact Section -->
