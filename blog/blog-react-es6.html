@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React ES6 | Ragul Balu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-500">
+                Ragul<span class="text-white">.</span>
+            </a>
+
+            <a href="../index.html#blog"
+                class="text-blue-400 hover:text-blue-300 transition">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Portfolio
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <span
+                class="inline-block bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-medium">
+                React ES6
+            </span>
+
+            <h1 class="text-5xl font-bold mt-6 leading-tight">
+                React ES6
+            </h1>
+
+            <p class="text-slate-400 mt-6 text-lg leading-8">
+                Handwritten class notes on ES6 concepts used in React including
+                Classes, Constructor and Methods.
+            </p>
+
+            <div class="flex items-center gap-6 mt-8 text-slate-400">
+
+                <span>
+                    <i class="far fa-calendar mr-2"></i>
+                    August 30, 2026
+                </span>
+
+                <span>
+                    <i class="far fa-clock mr-2"></i>
+                    5 min read
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Blog -->
+    <section class="py-16">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <article
+                class="bg-slate-900 border border-slate-800 rounded-3xl p-10 leading-8">
+
+                <p class="text-lg text-slate-300">
+                    ES6 (ECMAScript 6) is the sixth version of JavaScript and
+                    introduces many modern features that are widely used in React
+                    development.
+                </p>
+
+                <!-- ES6 -->
+                <h2 class="text-3xl font-bold mt-12 mb-5 text-blue-400">
+                    ES6
+                </h2>
+
+                <ul class="list-disc ml-8 space-y-2 text-slate-300">
+                    <li>ES6 → ECMAScript 6</li>
+                    <li>ES6 → 6<sup>th</sup> version of ECMAScript</li>
+                    <li>Published in 2015 (ECMAScript 2015)</li>
+                </ul>
+
+                <!-- Why Learn ES6 -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Why Should Learn ES6
+                </h2>
+
+                <p>
+                    React uses ES6. We should be familiar with the following
+                    features:
+                </p>
+
+                <ul class="list-disc ml-8 mt-5 space-y-2">
+                    <li>Classes</li>
+                    <li>Arrow Function</li>
+                    <li>Variables (let, const, var)</li>
+                    <li>Array Methods (.map())</li>
+                    <li>Destructuring</li>
+                    <li>Modules</li>
+                    <li>Ternary Operator</li>
+                    <li>Spread Operator</li>
+                </ul>
+
+                <!-- React ES6 Classes -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    React ES6 Classes
+                </h2>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Classes
+                </h3>
+
+                <ul class="list-disc ml-8 space-y-2 text-slate-300">
+                    <li>ES6 introduced Classes.</li>
+                    <li>Class is a type of function.</li>
+                    <li>Instead of using the keyword <strong>function</strong>, we use the <strong>class</strong> keyword.</li>
+                    <li>We must use the <strong>class</strong> keyword.</li>
+                    <li>The properties are assigned inside the <strong>constructor()</strong> method.</li>
+                </ul>
+
+                                <!-- Example : Simple Class -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Example : Simple Class
+                </h2>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>class Car {
+
+    constructor(name) {
+        this.brand = name;
+    }
+
+}</code></pre>
+
+                <p class="mt-5">
+                    We have begun the class name "<strong>Car</strong>" with an uppercase letter.
+                    This is the standard naming convention for classes.
+                </p>
+
+                <!-- Example : Create Object -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Example : Create Object
+                </h2>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>class Car {
+
+    constructor(name) {
+        this.brand = name;
+    }
+
+}
+
+const myCar = new Car("Hyndai");</code></pre>
+
+                <p class="mt-5">
+                    The constructor function is called automatically when the
+                    object is initialized.
+                </p>
+
+                <!-- Method -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Method in Class
+                </h2>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>class Car {
+
+    constructor(name) {
+        this.brand = name;
+    }
+
+    Present() {
+        return "I have a " + this.brand;
+    }
+
+}
+
+const myCar = new Car("Hyndai");
+
+myCar.Present();</code></pre>
+
+                <p class="mt-5 text-slate-300">
+                    The above example showcases, we call the method by referring
+                    to the object's method name followed by parentheses.
+                    Parameters would go inside the parentheses.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500">
+
+        © 2026 Ragul Balu. All Rights Reserved.
+
+    </footer>
+
+</body>
+
+</html>
