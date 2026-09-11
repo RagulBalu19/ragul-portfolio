@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React ES6 | Ragul Balu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-500">
+                Ragul<span class="text-white">.</span>
+            </a>
+
+            <a href="../index.html#blog"
+                class="text-blue-400 hover:text-blue-300 transition">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Portfolio
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+    
+        <div class="max-w-4xl mx-auto px-6">
+        
+            <span
+                class="inline-block bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-medium">
+                React ES6
+            </span>
+        
+            <h1 class="text-5xl font-bold mt-6 leading-tight">
+                React ES6 - Spread Operator & Modules
+            </h1>
+        
+            <p class="text-slate-400 mt-6 text-lg leading-8">
+                Handwritten class notes on the ES6 Spread Operator,
+                Destructuring with Spread, Modules, Named Exports,
+                Default Exports and Import.
+            </p>
+        
+            <div class="flex items-center gap-6 mt-8 text-slate-400">
+            
+                <span>
+                    <i class="far fa-calendar mr-2"></i>
+                    September 05, 2026
+                </span>
+            
+                <span>
+                    <i class="far fa-clock mr-2"></i>
+                    6 min read
+                </span>
+            
+            </div>
+        
+        </div>
+    
+    </section>
+    <!-- Blog -->
+    <section class="py-16">
+
+    <div class="max-w-4xl mx-auto px-6">
+
+        <article
+            class="bg-slate-900 border border-slate-800 rounded-3xl p-10 leading-8">
+
+            <!-- Spread Operator -->
+            <h2 class="text-3xl font-bold mt-12 mb-5 text-blue-400">
+                React ES6 Spread Operator
+            </h2>
+
+            <p class="text-lg text-slate-300">
+                The JavaScript spread operator (<strong>...</strong>) copies
+                all or part of an existing array or object into a new array
+                or object.
+            </p>
+
+            <h3 class="text-2xl font-semibold mt-8 mb-4">
+                Example
+            </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const n1 = [1, 2, 3];
+
+const n2 = [4, 5, 6];
+
+const n3 = [...n1, ...n2];
+
+// [1, 2, 3, 4, 5, 6]</code></pre>
+
+            <!-- Destructuring + Spread -->
+            <h3 class="text-2xl font-semibold mt-10 mb-4">
+                Destructuring and Spread Operator
+            </h3>
+
+            <p>
+                We can use both destructuring and spread operator at the same time.
+            </p>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto mt-5"><code>const numbers = [1, 2, 3, 4, 5];
+
+const [one, two, ...rest] = numbers;
+
+// 1
+// 2
+// 3, 4, 5</code></pre>
+
+            <!-- Spread with Object -->
+            <h3 class="text-2xl font-semibold mt-10 mb-4">
+                Spread Operator with Object
+            </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const car = {
+    brand: "Ford",
+    model: "Mustang",
+    color: "red"
+};
+
+const car2 = {
+    type: "car",
+    year: 2021,
+    color: "white"
+};
+
+const myCar = {...car, ...car2};
+
+console.log(myCar);</code></pre>
+
+            <!-- Modules -->
+            <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                React ES6 Modules
+            </h2>
+
+            <p>
+                JS modules break a code into separate file.
+                This make it easier to maintain code-base.
+            </p>
+
+            <p class="mt-5">
+                ES6 use <strong>import</strong> and <strong>export</strong>
+                statement to use modules.
+            </p>
+
+            <!-- Export -->
+            <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                Export
+            </h2>
+
+            <p>
+                We can export function or variable from any file.
+            </p>
+
+            <p class="mt-5">
+                There are 2 types of exports:
+            </p>
+
+            <ul class="list-disc ml-8 mt-4 space-y-2">
+                <li>Named Exports</li>
+                <li>Default Exports</li>
+            </ul>
+
+            <!-- Named Exports -->
+            <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                Named Exports
+            </h2>
+
+            <p>
+                There are 2 ways to create named export:
+            </p>
+
+            <ol class="list-decimal ml-8 mt-4 space-y-2">
+                <li>Inline individually</li>
+                <li>All at once at the bottom</li>
+            </ol>
+
+            <h3 class="text-2xl font-semibold mt-8 mb-4">
+                Example 1
+            </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>export const name = "John";
+
+export const age = 20;</code></pre>
+
+            <h3 class="text-2xl font-semibold mt-8 mb-4">
+                Example 2
+            </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const name = "John";
+
+const age = 20;
+
+export { name, age };</code></pre>
+
+                <!-- Default Exports -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Default Exports
+                </h2>
+
+                <p>
+                    We have only one default export in a file.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const msg = () => {
+    const name = "John";
+    const age = 20;
+
+    return name + " is " + age + " old";
+};
+
+export default msg;</code></pre>
+
+                <!-- Import -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Import
+                </h2>
+
+                <p>
+                    We can import files in two ways, based on named export or
+                    default export.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example : Import Named Export
+                </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>import { name, age } from "./person.js";</code></pre>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example : Import Default Export
+                </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>import msg from "./msg.js";</code></pre>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500">
+
+        © 2026 Ragul Balu. All Rights Reserved.
+
+    </footer>
+
+</body>
+
+</html>
+
+   

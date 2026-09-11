@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React ES6 | Ragul Balu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-500">
+                Ragul<span class="text-white">.</span>
+            </a>
+
+            <a href="../index.html#blog"
+                class="text-blue-400 hover:text-blue-300 transition">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Portfolio
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+
+        <div class="max-w-4xl mx-auto px-6">
+        
+            <span
+                class="inline-block bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-medium">
+                React ES6
+            </span>
+        
+            <h1 class="text-5xl font-bold mt-6 leading-tight">
+                React ES6 - Template String
+            </h1>
+        
+            <p class="text-slate-400 mt-6 text-lg leading-8">
+                Handwritten class notes on ES6 Template Strings,
+                multiline strings, expression interpolation,
+                variable insertion, map(), and ternary operator.
+            </p>
+        
+            <div class="flex items-center gap-6 mt-8 text-slate-400">
+            
+                <span>
+                    <i class="far fa-calendar mr-2"></i>
+                    September 08, 2026
+                </span>
+            
+                <span>
+                    <i class="far fa-clock mr-2"></i>
+                    6 min read
+                </span>
+            
+            </div>
+        
+        </div>
+    
+    </section>
+    <!-- Blog -->
+    <section class="py-16">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <article
+                class="bg-slate-900 border border-slate-800 rounded-3xl p-10 leading-8">
+
+                <p class="text-lg text-slate-300">
+                    Template strings allow us to write multiple lines and
+                    expressions inside a string.
+                </p>
+
+                <!-- React ES6 Template String -->
+                <h2 class="text-3xl font-bold mt-12 mb-5 text-blue-400">
+                    React ES6 Template String
+                </h2>
+
+                <p>
+                    It allows to write multiple lines and expressions.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const name = "John";
+    const age = 20;
+
+    const msg = `Hello, ${name}.
+    You are ${age} old!`;</code></pre>
+
+                <!-- Template String -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Template String
+                </h2>
+
+                <p>
+                    Template strings use backticks (<strong>`</strong>) instead
+                    of quotes and include:
+                </p>
+
+                <ul class="list-disc ml-8 mt-5 space-y-2">
+                    <li>Multiple lines without <code>\n</code></li>
+                    <li>Expressions inside <code>${}</code></li>
+                    <li>Quotes without escaping</li>
+                </ul>
+
+                <!-- Multi-line -->
+                <h3 class="text-2xl font-semibold mt-10 mb-4">
+                    Example : Multi-lines
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const html = `<div>
+        <h1>Title</h1>
+        <p>Para</p>
+    </div>`;</code></pre>
+
+                <p class="mt-5">
+                    The indentation in multiline string become part of string.
+                </p>
+
+                <!-- Variable Insert -->
+                <h3 class="text-2xl font-semibold mt-10 mb-4">
+                    Expression Interpolation
+                </h3>
+
+                <p>
+                    We can include any valid JS expression inside
+                    <code>${}</code>.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example : Variable Insert
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const FN = "John";
+    const LN = "Doe";
+
+    console.log(`Welcome ${FN} ${LN}`);</code></pre>
+
+                <!-- Expression Insert -->
+                <h3 class="text-2xl font-semibold mt-10 mb-4">
+                    Example : Expression Insert
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const a = 10;
+    const b = 10;
+
+    const c = `total: ${a + b}`;</code></pre>
+
+                <!-- map() -->
+                <h3 class="text-2xl font-semibold mt-10 mb-4">
+                    Example : Using map()
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const items = ["a", "b", "c"];
+
+    const list = `We have ${items.length} items:
+    ${items.map(item => `${item}`).join(", ")}`;</code></pre>
+
+                <!-- Ternary Operator -->
+                <h3 class="text-2xl font-semibold mt-10 mb-4">
+                    Example : Ternary Operator Insert
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const active = true;
+
+    const msg = `Status: ${active ? 'admin' : 'user'}`;</code></pre>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500">
+
+        © 2026 Ragul Balu. All Rights Reserved.
+
+    </footer>
+
+</body>
+
+</html>
+
+   

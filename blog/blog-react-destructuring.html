@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React ES6 - Class Inheritance & Arrow Functions | Ragul Balu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-500">
+                Ragul<span class="text-white">.</span>
+            </a>
+
+            <a href="../index.html#blog"
+                class="text-blue-400 hover:text-blue-300 transition">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Portfolio
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <span
+                class="inline-block bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-medium">
+                React ES6
+            </span>
+
+            <h1 class="text-5xl font-bold mt-6 leading-tight">
+                React ES6 - Destructuring
+            </h1>
+
+            <p class="text-slate-400 mt-6 text-lg leading-8">
+                Understand ES6 destructuring for arrays and objects, default values,
+                nested objects, props destructuring, and useState hook destructuring
+                in React.
+            </p>
+
+            <div class="flex items-center gap-6 mt-8 text-slate-400">
+
+                <span>
+                    <i class="far fa-calendar mr-2"></i>
+                    September 04, 2026
+                </span>
+
+                <span>
+                    <i class="far fa-clock mr-2"></i>
+                    7 min read
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Blog -->
+   <section class="py-16">
+
+    <div class="max-w-4xl mx-auto px-6">
+
+        <article
+            class="bg-slate-900 border border-slate-800 rounded-3xl p-10 leading-8">
+
+            <p class="text-lg text-slate-300">
+                Destructuring makes the code shorter and more readable by
+                reducing repetitive object and array access.
+            </p>
+
+            <!-- Destructuring Arrays -->
+            <h2 class="text-3xl font-bold mt-12 mb-5 text-blue-400">
+                Destructuring Arrays
+            </h2>
+
+            <h3 class="text-2xl font-semibold mt-8 mb-4">
+                Old Way
+            </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const ve = ["mustang", "F150", "expedition"];
+
+const car = ve[0];
+const truck = ve[1];
+const suv = ve[2];
+
+document.getElementById("demo").innerHTML = truck;</code></pre>
+
+            <h3 class="text-2xl font-semibold mt-10 mb-4">
+                New Way
+            </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const ve = ["mustang", "F150", "expedition"];
+
+const [car, truck, suv] = ve;
+
+document.getElementById("demo").innerHTML = truck;</code></pre>
+
+            <div class="bg-blue-600/10 border border-blue-600/30 rounded-xl p-6 mt-8">
+                <p>
+                    When destructuring arrays, the order that variables are
+                    declared is important.
+                </p>
+            </div>
+
+            <!-- Destructuring Objects -->
+            <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                Destructuring Objects
+            </h2>
+
+            <p>
+                We can use destructuring to extract values from an object.
+            </p>
+
+            <h3 class="text-2xl font-semibold mt-8 mb-4">
+                Example
+            </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const person = {
+    FN: "John",
+    LN: "Doe",
+    age: 50
+};
+
+let { FN, age, LN } = person;
+
+document.getElementById("demo").innerHTML =
+    FN + LN + age;</code></pre>
+
+            <ul class="list-disc ml-8 mt-6 space-y-2">
+                <li>We can unpack the values in random order.</li>
+                <li>We can extract the value what we want.</li>
+            </ul>
+
+            <!-- Default Values -->
+            <h3 class="text-2xl font-semibold mt-10 mb-4">
+                Default Value
+            </h3>
+
+            <p>
+                We can set default value for the missing property.
+            </p>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const person = {
+    FN: "John",
+    LN: "Doe",
+    age: 20
+};
+
+let {
+    FN,
+    LN,
+    age,
+    country = "India"
+} = person;</code></pre>
+
+            <!-- Nested Objects -->
+            <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                Destructuring Nested Objects
+            </h2>
+
+            <p>
+                We can also destructure a nested object by referencing the
+                nested objects using curly braces.
+            </p>
+
+            <h3 class="text-2xl font-semibold mt-8 mb-4">
+                Example
+            </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const person = {
+    FN: "John",
+    LN: "Doe",
+    age: 50,
+    car: {
+        brand: "Ford",
+        model: "Mustang"
+    }
+};
+
+// Destructuring
+let {
+    FN,
+    LN,
+    age,
+    car: {
+        brand,
+        model
+    }
+} = person;
+
+let msg =
+    "My name is " + FN +
+    " and I have a " + brand +
+    " " + model;</code></pre>
+
+                    <!-- Destructuring in React Components -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Destructuring in React Components
+                </h2>
+
+                <p>
+                    It is particularly useful in React for working with props,
+                    hooks, and API responses.
+                </p>
+
+                <p class="mt-5">
+                    It helps to make our code more concise & easier to read.
+                </p>
+
+                <!-- Props Destructuring -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Props Destructuring
+                </h2>
+
+                <p>
+                    When a component receives props, we can use destructuring
+                    to extract values we need.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="mt-4">
+                    Using destructuring:
+                </p>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto mt-5"><code>function Greeting({name, age}) {
+
+    return (
+        &lt;h1&gt;Hello, {name}! You are {age} years old&lt;/h1&gt;
+    );
+
+}</code></pre>
+
+                <p class="mt-6">
+                    Not using destructuring:
+                </p>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto mt-5"><code>function Greeting(Props) {
+
+    return (
+        &lt;h1&gt;Hello, {Props.name}! You are {Props.age} years old&lt;/h1&gt;
+    );
+
+}</code></pre>
+
+                <h3 class="text-2xl font-semibold mt-10 mb-4">
+                    Example
+                </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>import { createRoot } from "react-dom/client";
+
+function Greeting({name, age}) {
+
+    return (
+        &lt;h1&gt;Hello, {name}! You are {age} years old&lt;/h1&gt;
+    );
+
+}
+
+createRoot(document.getElementById("root")).render(
+    &lt;Greeting name="John" age={20} /&gt;
+);</code></pre>
+
+                <!-- useState Hook Destructuring -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    useState Hook Destructuring
+                </h2>
+
+                <p>
+                    When a component uses the useState hook, we use
+                    destructuring to extract values from it.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+<pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>import { createRoot, useState } from "react-dom/client";
+
+function Counter() {
+
+    //destructuring array by useState
+    const [count, setCount] = useState(0);
+
+    return (
+        &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+            Count: {count}
+        &lt;/button&gt;
+    );
+
+}
+
+createRoot(document.getElementById("root")).render(
+    &lt;Counter /&gt;
+);</code></pre>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500">
+
+        © 2026 Ragul Balu. All Rights Reserved.
+
+    </footer>
+
+</body>
+
+</html>
