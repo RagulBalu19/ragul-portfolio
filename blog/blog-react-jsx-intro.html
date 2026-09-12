@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React ES6 | Ragul Balu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-500">
+                Ragul<span class="text-white">.</span>
+            </a>
+
+            <a href="../index.html#blog"
+                class="text-blue-400 hover:text-blue-300 transition">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Portfolio
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+    
+        <div class="max-w-4xl mx-auto px-6">
+        
+            <span
+                class="inline-block bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-medium">
+                React JSX
+            </span>
+        
+            <h1 class="text-5xl font-bold mt-6 leading-tight">
+                React JSX
+            </h1>
+        
+            <p class="text-slate-400 mt-6 text-lg leading-8">
+                Handwritten class notes on JSX including Coding JSX,
+                Expressions, Multiple-line HTML, Top Level Elements,
+                Fragments, Closed Elements, className and JSX in
+                React Components.
+            </p>
+        
+            <div class="flex items-center gap-6 mt-8 text-slate-400">
+            
+                <span>
+                    <i class="far fa-calendar mr-2"></i>
+                    September 12, 2026
+                </span>
+            
+                <span>
+                    <i class="far fa-clock mr-2"></i>
+                    7 min read
+                </span>
+            
+            </div>
+        
+        </div>
+
+    </section>
+    <!-- Blog -->
+    <section class="py-16">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <article
+                class="bg-slate-900 border border-slate-800 rounded-3xl p-10 leading-8">
+
+                <!-- What is JSX -->
+                <h2 class="text-3xl font-bold mt-12 mb-5 text-blue-400">
+                    What is JSX
+                </h2>
+
+                <ul class="list-disc ml-8 space-y-2 text-slate-300">
+                    <li>JSX → JavaScript XML</li>
+                    <li>It allows us to write HTML with React.</li>
+                    <li>It makes it easier to write HTML in React.</li>
+                </ul>
+
+                <!-- Coding JSX -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Coding JSX
+                </h2>
+
+                <p>
+                    JSX allows us to write HTML elements in JS and place them
+                    in DOM without any function like createElement() or
+                    appendChild().
+                </p>
+
+                <p class="mt-5">
+                    It converts HTML element into React element.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const myElement = &lt;h1&gt;I Love JSX!&lt;/h1&gt;;
+
+    createRoot(document.getElementById("root")).render(
+        myElement
+    );</code></pre>
+
+                <!-- Expression -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Expression in JSX
+                </h2>
+
+                <p>
+                    We can write expression within
+                    <strong>{ }</strong>.
+                </p>
+
+                <p class="mt-4">
+                    The expression can be a React variable, property or any
+                    valid JS expression.
+                </p>
+
+                <p class="mt-4">
+                    JSX will execute the expression and return the result.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const myElement =
+        &lt;h1&gt;React is {5 + 5} times better with JSX&lt;/h1&gt;;</code></pre>
+
+                <!-- Large Block -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Inserting a Large Block of HTML
+                </h2>
+
+                <p>
+                    To write HTML on multiple lines, put HTML inside
+                    parentheses.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const myElement = (
+        &lt;ul&gt;
+            &lt;li&gt;Apples&lt;/li&gt;
+            &lt;li&gt;Bananas&lt;/li&gt;
+            &lt;li&gt;Cherries&lt;/li&gt;
+        &lt;/ul&gt;
+    );</code></pre>
+
+                <!-- One Top Level Element -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    One Top Level Element
+                </h2>
+
+                <p>
+                    The HTML code must be wrapped in one top level element.
+                </p>
+
+                <p class="mt-4">
+                    So, if we write two paragraphs, we must put them inside
+                    a parent element like <strong>&lt;div&gt;</strong>.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const myElement = (
+        &lt;div&gt;
+            &lt;p&gt;I am a paragraph.&lt;/p&gt;
+            &lt;p&gt;I am a paragraph too.&lt;/p&gt;
+        &lt;/div&gt;
+    );</code></pre>
+
+                <p class="mt-5">
+                    JSX will throw an error if the HTML is not correct or
+                    if HTML misses parent element.
+                </p>
+
+                <!-- Fragment -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Fragment
+                </h2>
+
+                <p>
+                    Alternatively, we can use "fragment" to wrap multiple
+                    lines.
+                </p>
+
+                <p class="mt-4">
+                    Fragment:
+                    <strong>&lt;&gt; &lt;/&gt;</strong>
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const myElement = (
+        &lt;&gt;
+            &lt;p&gt;I am a paragraph.&lt;/p&gt;
+            &lt;p&gt;I am a paragraph too.&lt;/p&gt;
+        &lt;/&gt;
+    );</code></pre>
+
+                <!-- Elements Must Be Closed -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Elements Must be Closed
+                </h2>
+
+                <p>
+                    JSX follows XML rules and therefore HTML elements must
+                    be properly closed.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const myElement = &lt;input type="text" /&gt;;</code></pre>
+
+                <p class="mt-5">
+                    JSX will throw an error if the HTML is not properly closed.
+                </p>
+
+                <!-- className -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Attribute class = className
+                </h2>
+
+                <p>
+                    The class attribute is much used in HTML, but since JSX
+                    is rendered as JS, the class keyword is a reserved
+                    keyword and cannot be used in JSX.
+                </p>
+
+                <p class="mt-4">
+                    We use <strong>className</strong> instead of class.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>const myElement =
+        &lt;h1 className="myclass"&gt;Hello World&lt;/h1&gt;;</code></pre>
+
+                <!-- React Components -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    JSX in React Components
+                </h2>
+
+                <p>
+                    React use components to build UI.
+                </p>
+
+                <p class="mt-4">
+                    The components are independent and reusable.
+                </p>
+
+                <p class="mt-4">
+                    React component are like JS function and return HTML.
+                </p>
+
+                <p class="mt-4">
+                    JSX work perfect inside React components.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>function Car() {
+        return (
+            &lt;&gt;
+                &lt;h2&gt;My Car&lt;/h2&gt;
+                &lt;p&gt;It is a Ford Mustang.&lt;/p&gt;
+            &lt;/&gt;
+        );
+    }
+
+    createRoot(document.getElementById("root")).render(
+        &lt;Car /&gt;
+    );</code></pre>
+
+                <!-- Operations -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Operations Inside Components
+                </h2>
+
+                <p>
+                    Inside the components, we can do some other operations
+                    before returning HTML.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+    <pre class="bg-slate-950 rounded-xl p-5 overflow-auto"><code>function Car() {
+
+        const brand = "Ford";
+        const model = "Mustang";
+
+        return (
+            &lt;&gt;
+                &lt;h2&gt;My Car&lt;/h2&gt;
+                &lt;p&gt;It is a {brand} {model}.&lt;/p&gt;
+            &lt;/&gt;
+        );
+    }
+
+    createRoot(document.getElementById("root")).render(
+        &lt;Car /&gt;
+    );</code></pre>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500">
+
+        © 2026 Ragul Balu. All Rights Reserved.
+
+    </footer>
+
+</body>
+
+</html>
+
+   
