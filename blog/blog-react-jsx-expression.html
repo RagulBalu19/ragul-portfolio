@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React.js: A Beginner's Guide to Getting Started | Ragul Balu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-500">
+                Ragul<span class="text-white">.</span>
+            </a>
+
+            <a href="../index.html#blog"
+                class="text-blue-400 hover:text-blue-300 transition">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Portfolio
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <span
+                class="inline-block bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-medium">
+                React JSX
+            </span>
+
+            <h1 class="text-5xl font-bold mt-6 leading-tight">
+                React JSX Expressions
+            </h1>
+
+            <p class="text-slate-400 mt-6 text-lg leading-8">
+                Learn how to use JavaScript expressions directly inside JSX
+                including expressions, variables, function calls, and object
+                properties using curly braces.
+            </p>
+
+            <div class="flex items-center gap-6 mt-8 text-slate-400">
+
+                <span>
+                    <i class="far fa-calendar mr-2"></i>
+                    September 13, 2026
+                </span>
+
+                <span>
+                    <i class="far fa-clock mr-2"></i>
+                    6 min read
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Blog -->
+    <section class="py-16">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <article
+                class="bg-slate-900 border border-slate-800 rounded-3xl p-10 leading-8">
+
+                <!-- Introduction -->
+                <p class="text-slate-300 text-lg leading-8">
+                    One of the most powerful features of JSX is the ability to
+                    embed JavaScript expressions directly within your markup.
+                </p>
+
+                <!-- Expressions -->
+                <h2 class="text-3xl font-bold mt-12 mb-5 text-blue-400">
+                    Expressions
+                </h2>
+
+                <p class="text-slate-300">
+                    You can insert any valid JavaScript expression inside JSX
+                    by wrapping it in curly braces
+                    <code class="text-blue-400">{ }</code>.
+                </p>
+
+                <p class="text-slate-300 mt-4">
+                    React will evaluate the expression and render the result
+                    in the DOM.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Execute the expression
+                    <code class="text-blue-400">218 * 1.36</code>:
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car() {
+      return (
+        &lt;&gt;
+          &lt;h1&gt;My car&lt;/h1&gt;
+          &lt;p&gt;It has {218 * 1.36} horsepower&lt;/p&gt;
+        &lt;/&gt;
+      );
+    }</code></pre>
+
+
+                <!-- Variables -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Variables
+                </h2>
+
+                <p class="text-slate-300">
+                    Variables are also valid expressions. Insert variables
+                    in JSX by wrapping it in curly braces
+                    <code class="text-blue-400">{ }</code>.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Use a variable inside JSX:
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car() {
+      const hp = 218 * 1.36;
+      return (
+        &lt;&gt;
+          &lt;h1&gt;My car&lt;/h1&gt;
+          &lt;p&gt;It has {hp} horsepower&lt;/p&gt;
+        &lt;/&gt;
+      );
+    }</code></pre>
+
+
+                <!-- Function Calls -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Function Calls
+                </h2>
+
+                <p class="text-slate-300">
+                    Function calls are valid expressions. Insert function
+                    calls in JSX by wrapping it in curly braces
+                    <code class="text-blue-400">{ }</code>.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Use a function inside JSX:
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function kwtohp(kw) {
+      return kw * 1.36;
+    }
+
+    function Car() {
+      return (
+        &lt;&gt;
+          &lt;h1&gt;My car&lt;/h1&gt;
+          &lt;p&gt;It has {kwtohp(218)} horsepower&lt;/p&gt;
+        &lt;/&gt;
+      );
+    }</code></pre>
+
+
+                <!-- Object Properties -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Object Properties
+                </h2>
+
+                <p class="text-slate-300">
+                    Access object properties within JSX.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Refer to an object property inside JSX:
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car() {
+      const myobj = {
+        name: "Fiat",
+        model: "500",
+        color: "white"
+      };
+
+      return (
+        &lt;&gt;
+          &lt;h1&gt;
+            My car is a {myobj.color} {myobj.name} {myobj.model}
+          &lt;/h1&gt;
+        &lt;/&gt;
+      );
+    }</code></pre>
+
+            </article>
+
+        </div>
+
+    </section>
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500">
+
+        © 2026 Ragul Balu. All Rights Reserved.
+
+    </footer>
+
+</body>
+
+</html>

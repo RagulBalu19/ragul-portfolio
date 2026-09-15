@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React.js: A Beginner's Guide to Getting Started | Ragul Balu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-500">
+                Ragul<span class="text-white">.</span>
+            </a>
+
+            <a href="../index.html#blog"
+                class="text-blue-400 hover:text-blue-300 transition">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Portfolio
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <span
+                class="inline-block bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-medium">
+                React JSX
+            </span>
+
+            <h1 class="text-5xl font-bold mt-6 leading-tight">
+                React JSX If Statements & React Components
+            </h1>
+
+            <p class="text-slate-400 mt-6 text-lg leading-8">
+                Learn how to use if statements and ternary expressions in JSX,
+                along with React Components, Function Components, Props,
+                Component Rendering, Reusable Components, and Components in Files.
+            </p>
+
+            <div class="flex items-center gap-6 mt-8 text-slate-400">
+
+                <span>
+                    <i class="far fa-calendar mr-2"></i>
+                    September 15, 2026
+                </span>
+
+                <span>
+                    <i class="far fa-clock mr-2"></i>
+                    10 min read
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Blog -->
+    <section class="py-16">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <article
+                class="bg-slate-900 border border-slate-800 rounded-3xl p-10 leading-8">
+
+                <!-- React JSX If Statements -->
+                <h2 class="text-3xl font-bold mt-12 mb-5 text-blue-400">
+                    React JSX If Statements
+                </h2>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Conditions - if statements
+                </h3>
+
+                <p class="text-slate-300">
+                    React supports <code class="text-blue-400">if</code>
+                    statements, but not inside JSX.
+                </p>
+
+                <p class="text-slate-300 mt-4">
+                    To be able to use conditional statements in JSX, you
+                    should put the <code class="text-blue-400">if</code>
+                    statements outside of the JSX, or you could use a
+                    ternary expression instead.
+                </p>
+
+                <!-- Option 1 -->
+                <h3 class="text-2xl font-semibold mt-10 mb-4">
+                    Option 1
+                </h3>
+
+                <p class="text-slate-300">
+                    Write <code class="text-blue-400">if</code> statements
+                    outside of the JSX code.
+                </p>
+
+                <h3 class="text-xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Write "Banana" if <code class="text-blue-400">x</code>
+                    is less than 10, otherwise "Apple":
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Fruit() {
+      const x = 5;
+      let y = "Apple";
+
+      if (x &lt; 10) {
+        y = "Banana";
+      }
+
+      return (
+        &lt;h1&gt;{y}&lt;/h1&gt;
+      );
+    }</code></pre>
+
+                <!-- Option 2 -->
+                <h3 class="text-2xl font-semibold mt-10 mb-4">
+                    Option 2
+                </h3>
+
+                <p class="text-slate-300">
+                    Use ternary expressions instead.
+                </p>
+
+                <h3 class="text-xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Write "Banana" if <code class="text-blue-400">x</code>
+                    is less than 10, otherwise "Apple":
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Fruit() {
+      const x = 5;
+
+      return (
+        &lt;h1&gt;{(x) &lt; 10 ? "Banana" : "Apple"}&lt;/h1&gt;
+      );
+    }</code></pre>
+
+                <p class="text-slate-300 mt-6">
+                    Note that in order to embed a JavaScript expression
+                    inside JSX, the JavaScript must be wrapped with curly
+                    braces, <code class="text-blue-400">{}</code>.
+                </p>
+
+
+                <!-- React Components -->
+                <h2 class="text-3xl font-bold mt-16 mb-5 text-blue-400">
+                    React Components
+                </h2>
+
+                <p class="text-slate-300">
+                    Components are like functions that return HTML elements.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-10 mb-4">
+                    React Components
+                </h3>
+
+                <p class="text-slate-300">
+                    Components are independent and reusable bits of code.
+                    They serve the same purpose as JavaScript functions,
+                    but work in isolation and return HTML.
+                </p>
+
+                <p class="text-slate-300 mt-4">
+                    Components come in two types, Class components and
+                    Function components. In this tutorial, we will
+                    concentrate on Function components.
+                </p>
+
+                <p class="text-slate-300 mt-4">
+                    In older React code bases, you may find Class components
+                    primarily used.
+                </p>
+
+                <p class="text-slate-300 mt-4">
+                    It is now suggested to use Function components along
+                    with Hooks, instead of Class components.
+                </p>
+
+                <p class="text-slate-300 mt-4">
+                    Class components are still supported.
+                </p>
+
+
+                <!-- Create First Component -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Create Your First Component
+                </h2>
+
+                <p class="text-slate-300">
+                    When creating a React component, the component's name
+                    <strong>MUST</strong> start with an upper case letter.
+                </p>
+
+                <p class="text-slate-300 mt-4">
+                    React components returns HTML code.
+                </p>
+
+                <h3 class="text-xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Create a Function component called
+                    <code class="text-blue-400">Car</code>:
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car() {
+      return (
+        &lt;h2&gt;Hi, I am a Car!&lt;/h2&gt;
+      );
+    }</code></pre>
+
+
+                <!-- Rendering -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Rendering a Component
+                </h2>
+
+                <p class="text-slate-300">
+                    Now your React application has a component called
+                    <code class="text-blue-400">Car</code>, which returns
+                    an <code class="text-blue-400">&lt;h2&gt;</code> element.
+                </p>
+
+                <p class="text-slate-300 mt-4">
+                    To use this component in your application, refer to it
+                    like this:
+                    <code class="text-blue-400">&lt;Car /&gt;</code>
+                </p>
+
+                <h3 class="text-xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Display the <code class="text-blue-400">Car</code>
+                    component in the "root" element:
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>createRoot(document.getElementById('root')).render(
+      &lt;Car /&gt;
+    )</code></pre>
+
+
+                <!-- Props -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Props
+                </h2>
+
+                <p class="text-slate-300">
+                    Arguments can be passed into a component as
+                    <code class="text-blue-400">props</code>, which stands
+                    for properties.
+                </p>
+
+                <p class="text-slate-300 mt-4">
+                    You send the arguments into the component as HTML
+                    attributes.
+                </p>
+
+                <h3 class="text-xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Use an attribute to pass a color to the
+                    <code class="text-blue-400">Car</code> component,
+                    and use it in the render function:
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car(props) {
+      return (
+        &lt;h2&gt;I am a {props.color} Car!&lt;/h2&gt;
+      );
+    }
+
+    createRoot(document.getElementById('root')).render(
+      &lt;Car color="red"/&gt;
+    );</code></pre>
+
+
+                <!-- Components in Components -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Components in Components
+                </h2>
+
+                <p class="text-slate-300">
+                    We can refer to components inside other components.
+                </p>
+
+                <h3 class="text-xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Use the <code class="text-blue-400">Car</code>
+                    component inside the
+                    <code class="text-blue-400">Garage</code> component:
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car() {
+      return (
+        &lt;h2&gt;I am a Car!&lt;/h2&gt;
+      );
+    }
+
+    function Garage() {
+      return (
+        &lt;&gt;
+          &lt;h1&gt;Who lives in my Garage?&lt;/h1&gt;
+          &lt;Car /&gt;
+        &lt;/&gt;
+      );
+    }
+
+    createRoot(document.getElementById('root')).render(
+      &lt;Garage /&gt;
+    );</code></pre>
+
+
+                <!-- Rendering Twice -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Rendering a Component Twice
+                </h2>
+
+                <p class="text-slate-300">
+                    We can render a component multiple times.
+                </p>
+
+                <h3 class="text-xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Use the <code class="text-blue-400">Car</code>
+                    component twice inside the
+                    <code class="text-blue-400">Garage</code> component:
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car() {
+      return (
+        &lt;h2&gt;I am a Car!&lt;/h2&gt;
+      );
+    }
+
+    function Garage() {
+      return (
+        &lt;&gt;
+          &lt;h1&gt;Who lives in my Garage?&lt;/h1&gt;
+          &lt;Car /&gt;
+          &lt;Car /&gt;
+        &lt;/&gt;
+      );
+    }
+
+    createRoot(document.getElementById('root')).render(
+      &lt;Garage /&gt;
+    );</code></pre>
+
+
+                <!-- Different Cars -->
+                <h3 class="text-xl font-semibold mt-10 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Use the <code class="text-blue-400">Car</code>
+                    component to display two different cars:
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car(props) {
+      return (
+        &lt;h2&gt;I am a {props.brand}!&lt;/h2&gt;
+      );
+    }
+
+    function Garage() {
+      return (
+        &lt;&gt;
+          &lt;h1&gt;Who lives in my Garage?&lt;/h1&gt;
+          &lt;Car brand="Ford" /&gt;
+          &lt;Car brand="BMW" /&gt;
+        &lt;/&gt;
+      );
+    }
+
+    createRoot(document.getElementById('root')).render(
+      &lt;Garage /&gt;
+    );</code></pre>
+
+
+                <!-- Components in Files -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Components in Files
+                </h2>
+
+                <p class="text-slate-300">
+                    React is all about re-using code, and it can be a good
+                    idea to split your components into separate files.
+                </p>
+
+                <p class="text-slate-300 mt-4">
+                    To do that, create a new file in the
+                    <code class="text-blue-400">src</code> folder with a
+                    <code class="text-blue-400">.jsx</code> file extension
+                    and put the code inside it.
+                </p>
+
+                <p class="text-slate-300 mt-4">
+                    Note that the filename must start with an uppercase
+                    character.
+                </p>
+
+                <h3 class="text-xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    This is the new file, we named it
+                    <code class="text-blue-400">Vehicle.jsx</code>:
+                </p>
+
+                <p class="text-blue-400 font-semibold mb-3">
+                    Vehicle.jsx
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car() {
+      return (
+        &lt;h2&gt;Hi, I am a Car!&lt;/h2&gt;
+      );
+    }
+
+    export default Car;</code></pre>
+
+
+                <p class="text-slate-300 mt-6">
+                    To be able to use the <code class="text-blue-400">Car</code>
+                    component, you have to import the
+                    <code class="text-blue-400">Vehicle.jsx</code> file in
+                    your application.
+                </p>
+
+                <h3 class="text-xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+
+                <p class="text-slate-400 mb-4">
+                    Now we import the <code class="text-blue-400">Vehicle.jsx</code>
+                    file in the application, and we can use the
+                    <code class="text-blue-400">Car</code> component as if it
+                    was created here.
+                </p>
+
+                <p class="text-blue-400 font-semibold mb-3">
+                    main.jsx
+                </p>
+
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>import { createRoot } from 'react-dom/client'
+    import Car from './Vehicle.jsx';
+
+    createRoot(document.getElementById('root')).render(
+      &lt;Car /&gt;
+    );</code></pre>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500">
+
+        © 2026 Ragul Balu. All Rights Reserved.
+
+    </footer>
+
+</body>
+
+</html>

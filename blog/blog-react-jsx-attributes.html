@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React.js: A Beginner's Guide to Getting Started | Ragul Balu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-500">
+                Ragul<span class="text-white">.</span>
+            </a>
+
+            <a href="../index.html#blog"
+                class="text-blue-400 hover:text-blue-300 transition">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Portfolio
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <span
+                class="inline-block bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-medium">
+                React JSX
+            </span>
+
+            <h1 class="text-5xl font-bold mt-6 leading-tight">
+                React JSX Attributes
+            </h1>
+
+            <p class="text-slate-400 mt-6 text-lg leading-8">
+                Learn how to use JSX attributes including className,
+                JavaScript expressions, camelCase event attributes,
+                Boolean attributes, and the style attribute.
+            </p>
+
+            <div class="flex items-center gap-6 mt-8 text-slate-400">
+
+                <span>
+                    <i class="far fa-calendar mr-2"></i>
+                    September 14, 2026
+                </span>
+
+                <span>
+                    <i class="far fa-clock mr-2"></i>
+                    7 min read
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>    
+
+    <!-- Blog -->
+    <section class="py-16">
+        
+        <div class="max-w-4xl mx-auto px-6">
+        
+            <article
+                class="bg-slate-900 border border-slate-800 rounded-3xl p-10 leading-8">
+        
+                <!-- Introduction -->
+                <p class="text-slate-300 text-lg leading-8">
+                    JSX allows you to insert attributes into HTML elements,
+                    but there are a few important differences.
+                </p>
+            
+            
+                <!-- className -->
+                <h2 class="text-3xl font-bold mt-12 mb-5 text-blue-400">
+                    class = className
+                </h2>
+            
+                <p class="text-slate-300">
+                    The <code class="text-blue-400">class</code> attribute is
+                    a much used attribute in HTML, but since JSX is rendered
+                    as JavaScript, and the <code class="text-blue-400">class</code>
+                    keyword is a reserved word in JavaScript, you are not
+                    allowed to use it in JSX.
+                </p>
+            
+                <p class="text-slate-300 mt-4">
+                    JSX solved this by using
+                    <code class="text-blue-400">className</code> instead.
+                    When JSX is rendered, it translates
+                    <code class="text-blue-400">className</code> attributes
+                    into <code class="text-blue-400">class</code> attributes.
+                </p>
+            
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+            
+                <p class="text-slate-400 mb-4">
+                    Use attribute <code class="text-blue-400">className</code>
+                    instead of <code class="text-blue-400">class</code> in JSX:
+                </p>
+            
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car() {
+      return (
+        &lt;h1 className="myclass"&gt;Hello World&lt;/h1&gt;
+      );
+    }</code></pre>
+    
+    
+                <!-- Expressions as Attributes -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Expressions as Attributes
+                </h2>
+            
+                <p class="text-slate-300">
+                    You can also use JavaScript expressions as attribute
+                    values. This is very useful for dynamic attributes.
+                </p>
+            
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+            
+                <p class="text-slate-400 mb-4">
+                    Use JavaScript expressions as attribute values:
+                </p>
+            
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car() {
+      const x = "myclass";
+      return (
+        &lt;h1 className={x}&gt;Hello World&lt;/h1&gt;
+      );
+    }</code></pre>
+    
+                <p class="text-slate-300 mt-5">
+                    Note that the attribute value is not wrapped in quotes,
+                    this is important when using expressions (JavaScript
+                    variables) as attribute values.
+                </p>
+            
+                <p class="text-slate-300 mt-4">
+                    If you use quotes, JSX will treat it as a string literal
+                    and not a JavaScript expression.
+                </p>
+            
+            
+                <!-- camelCase Event Attributes -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    camelCase Event Attributes
+                </h2>
+            
+                <p class="text-slate-300">
+                    Event attributes in JSX are written in camelCase.
+                </p>
+            
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+            
+                <p class="text-slate-400 mb-4">
+                    Use camelCase for event attributes:
+                </p>
+            
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car() {
+      const myfunc = () =&gt; {
+        alert('Hello World');
+      };
+  
+      return (
+        &lt;button onClick={myfunc}&gt;Click me&lt;/button&gt;
+      );
+    }</code></pre>
+    
+    
+                <!-- Boolean Attributes -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    Boolean Attributes
+                </h2>
+            
+                <p class="text-slate-300">
+                    If you pass no value for an attribute, JSX treats it as
+                    true. To pass false, you must specify it as an expression.
+                </p>
+            
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+            
+                <p class="text-slate-400 mb-4">
+                    Boolean true in JSX, this will make the button disabled:
+                </p>
+            
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>&lt;button onClick={myfunc} disabled&gt;Click me&lt;/button&gt;</code></pre>
+            
+            
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+            
+                <p class="text-slate-400 mb-4">
+                    Also true in JSX, this will also make the button disabled:
+                </p>
+            
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>&lt;button onClick={myfunc} disabled={true}&gt;Click me&lt;/button&gt;</code></pre>
+            
+            
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+            
+                <p class="text-slate-400 mb-4">
+                    False in JSX, this will NOT make the button disabled:
+                </p>
+            
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>&lt;button onClick={myfunc} disabled={false}&gt;Click me&lt;/button&gt;</code></pre>
+            
+            
+                <!-- Style Attribute -->
+                <h2 class="text-3xl font-bold mt-14 mb-5 text-blue-400">
+                    The style Attribute
+                </h2>
+            
+                <p class="text-slate-300">
+                    The style attribute in JSX only accepts a JavaScript
+                    object with camelCased CSS property names, rather than
+                    a CSS string (as in HTML).
+                </p>
+            
+                <h3 class="text-2xl font-semibold mt-8 mb-4">
+                    Example
+                </h3>
+            
+                <p class="text-slate-400 mb-4">
+                    Use the <code class="text-blue-400">style</code> attribute:
+                </p>
+            
+    <pre class="bg-slate-950 border border-slate-800 rounded-xl p-5 overflow-auto text-slate-300"><code>function Car() {
+      const mystyles = {
+        color: "red",
+        fontSize: "20px",
+        backgroundColor: "lightyellow",
+      };
+  
+      return (
+        &lt;&gt;
+          &lt;h1 style={mystyles}&gt;My car&lt;/h1&gt;
+        &lt;/&gt;
+      );
+    }</code></pre>
+    
+                <p class="text-slate-300 mt-6">
+                    Notice two things about the example above.
+                </p>
+            
+                <ol class="list-decimal ml-8 mt-4 space-y-2 text-slate-300">
+                    <li>
+                        The styles are stored in an object.
+                    </li>
+                    <li>
+                        Style properties are written in camelCase,
+                        e.g. <code class="text-blue-400">fontSize</code>,
+                        instead of <code class="text-blue-400">font-size</code>.
+                    </li>
+                </ol>
+            
+                <p class="text-slate-300 mt-5">
+                    This is an important difference between HTML and JSX.
+                </p>
+            
+            </article>
+        
+        </div>
+    
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500">
+
+        © 2026 Ragul Balu. All Rights Reserved.
+
+    </footer>
+
+</body>
+
+</html>
